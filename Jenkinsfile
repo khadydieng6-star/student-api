@@ -17,8 +17,9 @@ pipeline {
             }
         }
 stage('Lint') {
+
             steps {
-                bat 'mvn checkstyle:check'
+                bat 'mvn checkstyle:checkstyle'
             }
         }
         stage('Tests Unitaires') {
